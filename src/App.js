@@ -7,28 +7,17 @@ import InstanceCourseTable from "./components/InstanceCourseTable";
 import AddForm from "./components/AddForm";
 
 function App() {
-    return ( <
-        >
-        <
-        Navbar / >
-        <
-        Routes >
-        <
-        Route path = "/"
-        element = { < CourseTable / > }
-        />{" "} <
-        Route path = "/view-instance"
-        element = { < InstanceCourseTable / > }
-        /> <
-        Route path = "/course/:courseCode"
-        element = { < CourseDetail / > }
-        />{" "} <
-        Route path = "/add"
-        element = { < AddForm / > }
-        />{" "} <
-        /Routes>{" "} <
-        />
-    );
+  return (
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<CourseTable />} />{" "}
+        <Route path="/view-instance" element={<InstanceCourseTable />} />
+        <Route path="/course/:courseCode" element={<CourseDetail />} />{" "}
+        <Route path="/add" element={<AddForm />} />{" "}
+      </Routes>{" "}
+    </>
+  );
 }
 
 export default App;
